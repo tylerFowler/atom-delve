@@ -1,0 +1,14 @@
+{
+  "name": "atom-delve",
+  "main": "./lib/atom-delve",
+  "version": "0.0.0",
+  "description": "Atom Delve integration for interactive Go debugging",
+  "keywords": [],
+  "activationCommands": {},
+  "repository": "https://github.com/atom/atom-delve",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {}
+}
