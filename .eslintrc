@@ -2,7 +2,8 @@
   "env": {
     "browser": false,
     "node": true,
-    "es6": true
+    "es6": true,
+    "atomtest": true
   },
   "parserOptions": {
     "ecmaVersion": 6,
