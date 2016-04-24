@@ -1,6 +1,6 @@
 {
   "name": "atom-delve",
-  "main": "./lib/atom-delve",
+  "main": "./lib/atom-delve.js",
   "version": "0.0.0",
   "description": "Atom Delve integration for interactive Go debugging",
   "keywords": [],
@@ -11,6 +11,8 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "delvejs": "^0.1.0"
+    "delvejs": "^0.1.0",
+    "flux": "^2.1.1",
+    "react-for-atom": "^15.0.1-0"
   }
 }
