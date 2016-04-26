@@ -51,7 +51,7 @@
     "dot-notation": [2, {
       "allowKeywords": true
     }],
-    "eqeqeq": 2,
+    "eqeqeq": 0,
     "guard-for-in": 2,
     "no-undef": 0,
     "no-caller": 2,
