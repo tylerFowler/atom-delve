@@ -24,7 +24,7 @@
     "title": "Delve build flags",
     "description": "Custom build flags to pass to delve when starting a session",
     "type": "string",
-    "default": null,
+    "default": "",
     "order": 3
   },
   "usePendingOnJump": {
