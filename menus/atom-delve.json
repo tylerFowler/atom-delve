@@ -13,7 +13,12 @@
       "submenu": [
         {
           "label": "atom-delve",
-          "submenu": []
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "atom-delve:toggle"
+            }
+          ]
         }
       ]
     }
