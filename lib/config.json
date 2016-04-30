@@ -1,0 +1,37 @@
+{
+  "serverHost": {
+    "title": "Server host",
+    "description": "The host to run Delve on, usually localhost",
+    "type": "string",
+    "default": "127.0.0.1",
+    "order": 0
+  },
+  "serverPort": {
+    "title": "Server port",
+    "description": "The port to run Delve on",
+    "type": "number",
+    "default": 8081,
+    "order": 1
+  },
+  "logServerMessages": {
+    "title": "Log server messages",
+    "description": "Writes all delve messages to the console if on",
+    "type": "boolean",
+    "default": false,
+    "order": 2
+  },
+  "buildFlags": {
+    "title": "Delve build flags",
+    "description": "Custom build flags to pass to delve when starting a session",
+    "type": "string",
+    "default": null,
+    "order": 3
+  },
+  "usePendingOnJump": {
+    "title": "Use pending tabs on jump",
+    "description": "If on uses pending tabs when the debugger state moves to an unopened file",
+    "type": "boolean",
+    "default": true,
+    "order": 4
+  }
+}
