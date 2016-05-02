@@ -17,6 +17,10 @@
             {
               "label": "Toggle",
               "command": "atom-delve:toggle"
+            },
+            {
+              "label": "Kill Server",
+              "command": "atom-delve:kill"
             }
           ]
         }
