@@ -1,0 +1,22 @@
+/**
+* Source View Styles
+* Includes only the styles that need to decorate an editor
+**/
+
+// Breakpoint marker
+.breakpoint {
+  @breakpoint-size: 10px;
+
+  background: fade(red, 75%); // TODO: compute this based off of the theme somehow
+  // Atom puts a height of 19px for some reason
+  height: @breakpoint-size !important;
+  width: @breakpoint-size;
+  border-radius: 50%;
+  margin-top: 40%;
+}
+
+.gutter-container > .gutter[gutter-name="delve-breakpoints"] {
+  .delve-breakpoint {
+    .breakpoint();
+  }
+}
