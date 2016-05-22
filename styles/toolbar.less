@@ -1,6 +1,8 @@
+@icons-dir: "atom://atom-delve/assets";
+
 atom-panel-container .delve-toolbar {
   height: 50px;
-  background: #1f1e1f;
+  background: @base-background-color;
 
   ul {
     list-style-type: none;
@@ -19,7 +21,22 @@ atom-panel-container .delve-toolbar {
     width: @btn-size;
     height: @btn-size;
     margin: @btn-size - 50px / 2 + 2 0;
-    background: #d8d8d8;
-    border-radius: 1px;
+
+    border-radius: 2px;
+    background-color: #fff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+
+    box-shadow: none;
+
+    // TODO: replace these w/ an icon font after icons are finalized
+    &.continue { background-image: url("@{icons-dir}/continue.png"); }
+    &.restart { background-image: url("@{icons-dir}/restart.png"); }
+    &.next { background-image: url("@{icons-dir}/next.png"); }
+    &.step { background-image: url("@{icons-dir}/step-instruction.png"); }
+    &.step-into { background-image: url("@{icons-dir}/step-into.png"); }
+    &.clear-breakpoints { background-image: url("@{icons-dir}/clear-breakpoints.png"); }
+    &.stop { background-image: url("@{icons-dir}/stop.png"); }
   }
 }
