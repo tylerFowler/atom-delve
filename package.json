@@ -13,7 +13,7 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "delvejs": "^0.2.1",
+    "delvejs": "^0.2.2",
     "flux": "^2.1.1",
     "keymirror": "^0.1.1",
     "vanilla-jsx": "^3.0.2"
