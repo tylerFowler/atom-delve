@@ -11,7 +11,7 @@
   background: fade(darken(@background-color-info, 10%), 90%);
 
   height: @breakpoint-size !important;
-  width: @breakpoint-size;
+  width: @breakpoint-size - .01; // w/o the offset the shape is oblong
   border-radius: 50%;
   margin: .45em .25em 0;
 
