@@ -2,8 +2,8 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle atom-delve",
-        "command": "atom-delve:toggle"
+        "label": "Start Delve Debugger",
+        "command": "atom-delve:start-debugger"
       }
     ]
   },
@@ -15,8 +15,8 @@
           "label": "atom-delve",
           "submenu": [
             {
-              "label": "Toggle",
-              "command": "atom-delve:toggle"
+              "label": "Start Debugger",
+              "command": "atom-delve:start-debugger"
             },
             {
               "label": "Kill Server",
