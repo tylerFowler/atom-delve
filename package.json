@@ -5,7 +5,7 @@
   "description": "Atom Delve integration for interactive Go debugging",
   "keywords": [],
   "activationCommands": {
-    "atom-workspace": "atom-delve:toggle"
+    "atom-workspace": "atom-delve:start-debugger"
   },
   "repository": "https://github.com/tylerFowler/atom-delve",
   "license": "MIT",
