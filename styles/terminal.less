@@ -1,26 +1,39 @@
+@import "./colors";
+
 // General styles for a delve terminal panel
-
-// TODO: offer separate styles for light & dark? Could be atom-delve config option
-@term-bg: #4a4a4a;
-@term-text-color: #3acf71;
-
 .delve-terminal-panel {
   background: @term-bg;
   color: @term-text-color;
   overflow-x: hidden;
   overflow-y: scroll;
 
-  pre {
-    background: none;
+  pre, code, .delve-terminal-input {
     color: inherit;
-
-    padding: .35em 1em;
-    user-select: text;
 
     // swap colors for selection
     &::selection {
       color: @term-bg;
       background-color: @term-text-color;
     }
+  }
+
+  pre, code {
+    background: none;
+    color: inherit;
+
+    padding: .35em 1em;
+  }
+
+  .delve-terminal-input {
+    background: inherit;
+    border: none;
+    border-radius: 0;
+
+    min-height: 2em;
+    width: 100%;
+
+    // this should always be wrapped in a <code> tag so that the inherited
+    // font family results in the editor's monospaced font selection
+    font-family: inherit;
   }
 }
