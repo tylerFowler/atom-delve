@@ -10,6 +10,7 @@
   pre, code, .delve-terminal-input {
     color: inherit;
     white-space: pre-wrap;
+    word-break: break-word;
 
     // swap colors for selection
     &::selection {
@@ -37,7 +38,7 @@
     border-radius: 0;
 
     min-height: 2em;
-    width: 95%;
+    width: ~"calc(95% - 1em)";
 
     // this should always be wrapped in a <code> tag so that the inherited
     // font family results in the editor's monospaced font selection
