@@ -4,6 +4,10 @@
 
 .delve-io-panel {
   height: @io-panel-height;
+
+  &:not(.dragged) {
+    transition: height .45s ease-in-out;
+  }
 }
 
 // Layout styles
