@@ -10,12 +10,11 @@
   vertical-align: top;
   height: @io-panel-height;
   min-width: 250px;
+  background: @term-bg;
 }
 
 .delve-io-left-panel { width: 64%; }
 .delve-io-right-panel { width: 35%; }
-
-.delve-io-panel { background: @term-bg; }
 
 .delve-io-panel-resizer {
   width: 2px;
@@ -29,10 +28,7 @@
 .delve-io-title-bar {
   height: 1.5em;
   width: 100%;
-
-  background: @base-background-color;
-  border-left: 2px solid @base-border-color;
-  border-right: 2px solid @base-border-color;
+  padding: 0 1.25em;
 
   .delve-io-action {
     &-minimize, &-maximize {
