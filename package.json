@@ -17,6 +17,7 @@
     "delvejs": "^0.2.5",
     "flux": "^2.1.1",
     "keymirror": "^0.1.1",
+    "underscore": "^1.8.3",
     "vanilla-jsx": "^3.0.2"
   }
 }
