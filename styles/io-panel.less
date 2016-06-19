@@ -2,13 +2,17 @@
 
 @io-panel-height: 250px;
 
+.delve-io-panel {
+  height: @io-panel-height;
+}
+
 // Layout styles
 // TODO: smaller screen styling, stack? Switch to a tabbed view?
 // Rely on min/max buttons?
 .delve-io-left-panel, .delve-io-right-panel {
   display: inline-block;
   vertical-align: top;
-  height: @io-panel-height;
+  height: 100%;
   min-width: 100px;
 
   background: @term-bg;
@@ -18,10 +22,18 @@
 .delve-io-left-panel { width: 64%; }
 .delve-io-right-panel { width: 35%; }
 
+.delve-io-resizer {
+  height: 5px;
+  width: 100%;
+  display: block;
+
+  cursor: row-resize;
+}
+
 .delve-io-panel-resizer {
   width: 5px;
   background-color: @term-border-color;
-  height: @io-panel-height;
+  height: 100%;
   display: inline-block;
 
   &:hover { cursor: col-resize; }
