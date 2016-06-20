@@ -1,0 +1,19 @@
+@import "./colors";
+
+@initial-stack-pnl-width: 350px;
+
+.delve-stack-panel {
+  width: @initial-stack-pnl-width;
+
+  .tab-container {
+    padding: 0;
+    list-style-type: none;
+
+    > li {
+      display: inline-block;
+
+      &:not(:last-of-type) { margin-right: 1em; }
+    }
+    h1 { font-size: 1.15rem; }
+  }
+}
