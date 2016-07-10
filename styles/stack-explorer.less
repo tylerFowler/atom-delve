@@ -1,6 +1,6 @@
 @import "./colors";
 
-@initial-stack-pnl-width: 350px;
+@initial-stack-pnl-width: 400px;
 
 .delve-stack-panel {
   width: @initial-stack-pnl-width;
@@ -8,13 +8,18 @@
   .tab-container {
     padding: 0;
     list-style-type: none;
+    border-bottom: 2px solid @dlv-panel-border-color;
 
     > li {
+      text-align: center;
+      width: 25%;
       display: inline-block;
 
-      &:not(:last-of-type) { margin-right: 1em; }
+      &.active {
+        background: @background-color-selected;
+      }
     }
 
-    h1 { font-size: 1.15rem; }
+    h1 { font-size: 1.15rem; margin: 1em 0; }
   }
 }
