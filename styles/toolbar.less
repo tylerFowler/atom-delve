@@ -33,14 +33,26 @@ atom-panel-container .delve-toolbar {
 
     box-shadow: none;
 
+    transition: none;
+
+    // certain misbehaving themes *ahem Nucleus Dark* use important styles
+    // on all buttons at the root level so we need to make sure these aren't
+    // overridden
+    &:hover {
+      border-color: transparent !important;
+      background: unset !important;
+      background-size: 30px !important;
+      background-repeat: no-repeat !important;
+    }
+
     // TODO: replace these w/ an icon font after icons are finalized
-    &.continue { background-image: url("@{icons-dir}/continue.png"); }
-    &.restart { background-image: url("@{icons-dir}/restart.png"); }
-    &.next { background-image: url("@{icons-dir}/next.png"); }
-    &.step { background-image: url("@{icons-dir}/step.png"); }
-    &.step-instruction { background-image: url("@{icons-dir}/step-instruction.png"); }
-    &.step-into { background-image: url("@{icons-dir}/step-into.png"); }
-    &.clear-breakpoints { background-image: url("@{icons-dir}/clear-breakpoints.png"); }
-    &.stop { background-image: url("@{icons-dir}/stop.png"); }
+    &.continue, &.continue:hover { background-image: url("@{icons-dir}/continue.png") !important; }
+    &.restart, &.restart:hover { background-image: url("@{icons-dir}/restart.png") !important; }
+    &.next, &.next:hover { background-image: url("@{icons-dir}/next.png") !important; }
+    &.step, &.step:hover { background-image: url("@{icons-dir}/step.png") !important; }
+    &.step-instruction, &.step-instruction:hover { background-image: url("@{icons-dir}/step-instruction.png") !important; }
+    &.step-into, &.step-into:hover { background-image: url("@{icons-dir}/step-into.png") !important; }
+    &.clear-breakpoints, &.clear-breakpoints:hover { background-image: url("@{icons-dir}/clear-breakpoints.png") !important; }
+    &.stop, &.stop:hover { background-image: url("@{icons-dir}/stop.png") !important; }
   }
 }
